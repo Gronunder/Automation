@@ -1,0 +1,9 @@
+- name: Execute Provision EC2 and Configure Apache Playbooks
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Include Provision EC2 Playbook
+      import_playbook: playbooks/provision_ec2.yml
+
+    - name: Include Configure Apache and Web App Playbook
+      import_playbook: playbooks/configure_apache_and_web_app.yml
