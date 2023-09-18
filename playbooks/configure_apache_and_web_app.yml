@@ -1,0 +1,8 @@
+---
+- name: Configure Apache and Deploy Web App
+  hosts: webserver1
+  become: yes
+  gather_facts: true
+  tags: configuration
+  roles:
+    - ec2_provision
