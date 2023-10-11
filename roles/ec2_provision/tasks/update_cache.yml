@@ -1,5 +1,0 @@
----
- - name: Update package cache on Ubuntu
-   become: yes
-   ansible.builtin.apt:
-    update_cache: yes  # This performs 'apt update'

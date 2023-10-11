@@ -1,6 +1,0 @@
----
-- name: Install apache httpd on Ubuntu
-  become: yes
-  ansible.builtin.apt:
-    name: apache2
-    state: present
